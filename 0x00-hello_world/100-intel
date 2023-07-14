@@ -1,11 +1,2 @@
 #!/bin/bash
-
-# Get the C file name from the $CFILE environment variable
-c_file=$CFILE
-
-# Generate the output file name by replacing the .c extension with .s
-s_file="${c_file%.c}.s"
-
-# Generate the assembly code using gcc with the -S and -masm=intel options
-gcc -S -masm=intel "$c_file" -o "$s_file"
-
+export CFILE=0-main.c && gcc -S -masm=intel $CFILE -o ${CFILE%.c}.s
