@@ -3,10 +3,11 @@
 /**
  * main - Entry point
  *
- * Description: Prints "_putchar" using the _putchar function
+ * Description: Prints _putchar  using putchar prototype
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	char str[] = "_putchar";
