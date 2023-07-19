@@ -2,7 +2,9 @@
 
     // Assuming there's a header file called "_putchar.h" containing the declaration of the _putchar function.
 
-   int main(void) {
+   int main(void)
+
+{
     _putchar('_');
     _putchar('p');
     _putchar('u');
