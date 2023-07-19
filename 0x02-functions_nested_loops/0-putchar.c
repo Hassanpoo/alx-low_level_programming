@@ -12,7 +12,7 @@ int _putchar(char c);
 
 
 /**
- * main - Entry point
+ * maim.h - Entry point
  *
  * Return: Always 0 (Success)
  */
