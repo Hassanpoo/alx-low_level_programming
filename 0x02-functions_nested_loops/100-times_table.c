@@ -7,21 +7,39 @@
  */
 void print_times_table(int n)
 {
-	if (n > 15 || n < 0)
-		return;
+	int prod, mult, num;
 
-	int i, j, result;
-
-	for (i = 0; i <= n; i++)
+	if (n <= 15 && n >= 0)
 	{
-		for (j = 0; j <= n; j++)
+		for (num = 0; num <= n; ++num)
 		{
-			result = i * j;
-			if (j == 0)
-				printf("%d", result);
-			else
-				printf(", %3d", result);
+			_putchar('0');
+			for (mult = 1; mult <= n; ++mult)
+			{
+				_putchar(',');
+				_putchar(' ');
+
+				prod = num * mult;
+
+				if (prod <= 9)
+					_putchar(' ');
+
+				if (prod <= 99)
+					_putchar(' ');
+
+				if (prod >= 100)
+				{
+					_putchar((prod / 100) + '0');
+					_putchar(((prod / 10) % 10) + '0');
+				}
+				else if (prod <= 99 && prod >= 10)
+				{
+					_putchar((prod / 10) + '0');
+				}
+
+				_putchar((prod % 10) + '0');
+			}
+			_putchar('\n');
 		}
-		printf("\n");
 	}
 }
