@@ -3,13 +3,15 @@
 /**
  * main - Entry point of the program
  *
- * Description: Computes the sum of all the multiples of 3 or 5 below 1024 (excluded)
+ * Description: Computes the sum of all
+ * the multiples of 3 or 5 below 1024 (excluded)
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int sum, num;
+	int sum = 0;
+	int num;
 
 	for (num = 0; num < 1024; num++)
 	{
